@@ -1,4 +1,4 @@
-const apiKey = 'xnZPfpFePyUaAVIDEhOgyeQGEOZMCJZggJD3gLJm';
+const apiKey = 'DEMO_KEY';
 
 let allData = [];
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
