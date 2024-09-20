@@ -1,0 +1,55 @@
+body {
+    background-image: url("./Resources/Background-1.jpg");
+}
+.details-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-content {
+    background-color: lightskyblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-title {
+    color: #0B3D91;
+    margin-bottom: 15px;
+}
+
+.details-date {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.details-explanation {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.details-copyright {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.btn-back {
+    background-color: #0B3D91;
+    border-color: #0B3D91;
+}
+
+.btn-back:hover {
+    background-color: #FC3D21;
+    border-color: #FC3D21;
+}
+
+@media (max-width: 768px) {
+    .details-image {
+        max-height: 300px;
+    }
+}
+

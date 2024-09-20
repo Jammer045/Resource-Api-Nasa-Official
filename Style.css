@@ -1,0 +1,233 @@
+body {
+    background-image: url("./Resources/Background-1.jpg");
+}
+
+.welcome-message {
+    max-width: 600px;
+}
+
+.apod-card {
+    height: 100%;
+}
+
+.apod-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.favorite-btn:hover {
+    background-color: rgba(248, 223, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.favorite-btn:focus {
+    outline: none;
+}
+
+.favorite-btn i {
+    color: #ffc107;
+    transition: color 0.3s;
+}
+
+.favorite-btn:hover i {
+    color: #ffa000;
+}
+
+.favorite-btn i.bi-star-fill {
+    color: #ffa000;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding-top: 0;
+}
+
+.btn-details {
+    width: 100%;
+}
+
+.remove-favorite-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-favorite-btn:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.remove-favorite-btn i {
+    color: #dc3545;
+}
+
+.remove-favorite-btn:hover i {
+    color: white;
+}
+
+#banner {
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+}
+
+#carouselExample, .carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-message {
+    z-index: 10;
+    max-width: 600px;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    #banner {
+        height: 300px; /* Altura reducida para dispositivos móviles */
+    }
+
+    .welcome-message {
+        padding: 10px !important;
+    }
+
+    .welcome-message h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message p {
+        font-size: 0.9rem;
+    }
+}
+
+.navbar {
+    background-color: #0B3D91 !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FC3D21 !important; /* Rojo NASA */
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #082a6c;
+        padding: 10px;
+    }
+}
+
+.filter-container select {
+    color: white;
+    background-color: #0B3D91;
+}
+
+h2 {
+    color: white;
+    background-color: #0B3D91;
+}
+
+#result-count {
+    font-style: italic;
+    background-color: #0B3D91; /* Azul NASA */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#apod-container .text-center {
+    width: 100%;
+    padding: 20px;
+    background-color: #0B3D91; /* Azul NASA */
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Ajuste para el texto dentro del contenedor de resultados */
+#apod-container .text-muted {
+    color: white !important;
+}
